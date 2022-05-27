@@ -1,0 +1,16 @@
+.link {
+    position: relative;
+    text-decoration: wavy;
+}
+
+.bar {
+    position: -webkit-sticky;
+    background-color: ghostwhite;
+    padding: 1%;
+}
+
+.li {
+    display: inline;
+    margin-left: 3%;
+    margin-top: 5%;
+}
