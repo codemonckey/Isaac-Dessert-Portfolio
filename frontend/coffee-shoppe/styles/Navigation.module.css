@@ -5,7 +5,7 @@
 
 .bar {
     position: -webkit-sticky;
-    background-color: black;
+    background-color: #111111;
     padding-top: 2%;
     padding-bottom: 2%;
 }
@@ -14,21 +14,24 @@
     display: inline;
     margin-left: 3%;
     margin-top: 6%;
-    color: white;
+    color: #dddddd;
 }
 
 .foot {
-    position: fixed;
-    bottom: 0;
+    position: absolute;
+    bottom: 1em;
     width: 100%;
-    color: white
+    height: 5em;
+    color: #dddddd
 }
 
 .block {
     position: relative;
     margin-left: 5%;
+    float: left;
 }
 
 .header {
     text-decoration: underline;
+    color: #dddddd;
 }
