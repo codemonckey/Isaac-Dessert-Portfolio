@@ -9,8 +9,16 @@
     margin-bottom: 2em;
     margin-left:2em;
     border-radius: .20em;
+    transition: transform .2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
+  .bar:hover {
+    transform: scale(1.05);
+  }
+
   .bar:before {
     width: var(--width-var, 100%);
     height: 3em;
@@ -20,6 +28,26 @@
     width: var(--width-var, 100%);
     height: 3em;
   }
+
+  .barText {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    animation: fadein 5s;
+    opacity: 85%;
+    color: black;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  @keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
 
   @keyframes createBar {
     0% {
@@ -35,8 +63,19 @@
   } 
 
   .imageSkills {
-      height: 3em;
-      width: 3em;
+      transition: transform .2s;
+      transition: transform .7s ease-in-out;
+      animation: spin 1s;
+    }
+
+    @keyframes spin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+
+  .imageSkills:hover {
+    transform: scale(1.20);
+    transform: rotate(360deg);
   }
 
 .header {

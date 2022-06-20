@@ -1,9 +1,7 @@
 .odds {
     background-color: #dddddd;
     width: 98%;
-    height:30em;
     margin: 0 auto;
-    margin-bottom: 1em;
     padding: 3em;
     -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 3s; /* Firefox < 16 */
@@ -20,15 +18,19 @@
     background-color: #192841;
     animation: createBox .75s;
     width: 98%;
-    height:20em;
     margin: 0 auto;
-    margin-bottom: 1em;
+
+    display: flex;
+    flex-direction: row;
     padding: 3em;
     border-radius: 10px;
 }
 
 .container {
     padding-bottom: 6em;
+    display: flex;
+    gap: 1em;
+    flex-direction: column
 }
 
 .pageContainer {
