@@ -11,11 +11,11 @@ const experienceData =[{"image":"icons/Kotlin_Icon.svg.png","color":"red","width
 
     export const ExperienceBar = () => {
         return (
-            <div>
+            <div className={bars.flexContainer}>
                 {experienceData.map(function(d, idx){
                     const [animated, setAnimated] = useState(false);
                     
-                    return (<div className={styles.skillSet} key={d.key}>
+                    return (<div className={styles.skillSet} key={idx}>
                         <div
                             onMouseEnter={() => setAnimated(() => true)}
                             onAnimationEnd={() => setAnimated(() => false)}>

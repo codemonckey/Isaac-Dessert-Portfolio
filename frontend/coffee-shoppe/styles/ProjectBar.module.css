@@ -1,7 +1,7 @@
 .projectCard {
     display: flex;
     flex-direction: column;
-    row-gap: 10px;
+    gap: 10px;
     height: 18em;
     width: 10em;
     border-radius: 5%;
@@ -10,7 +10,7 @@
 
 }
 .projectCard:hover {
-    transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    transform: scale(1.05); 
     cursor: pointer;
 }
 
@@ -25,15 +25,48 @@
     position: relative;
     left: 8%;
     color: #192841;
-    font-size: 8;
+    font-size: .8em;
     font-style: oblique;
     opacity: 80%;
+
+    margin-block-start: 0;
+    margin-block-end: 0;
+    width:84%;
 }
 
 .header {
     position: relative;
     left: 8%;
     color: #192841;
-    font-size: 11;
+    font-size: 1em;
     font-weight: bold;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    width:84%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; 
+}
+
+.text {
+    position: relative;
+    left: 8%;
+    width:84%;
+    font-size: .8em;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4; 
+}
+
+.cardContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
 }

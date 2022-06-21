@@ -1,4 +1,10 @@
 
+  .flexContainer {
+    display: flex;
+    flex-direction: column;
+    width: 98%
+  }
+
   .bar {
     animation: createBar 3s;
     left: 0;

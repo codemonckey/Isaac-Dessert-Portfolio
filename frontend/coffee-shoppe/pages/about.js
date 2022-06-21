@@ -10,10 +10,10 @@ function about() {
             <Navbar/>
                 <div className={styles.container}>
                     <div className={styles.odds}>
-                        <ExperienceBar/>
+                        <Projects/>
                     </div>
                     <div className={styles.evens}>
-                        <Projects/>
+                        <ExperienceBar/>
                     </div>
                     <div className={styles.odds}>
 
