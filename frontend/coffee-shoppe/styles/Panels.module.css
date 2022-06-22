@@ -1,6 +1,46 @@
+.threeFourthPanel {
+    background-color: #192841;
+    margin: 0 auto;
+    padding: 1em;
+    width: 50%;
+    border-radius: 10px;
+    animation: fadeinandsides 1s;
+}
+@keyframes fadeinandsides {
+    0% { 
+        right: 50px;
+        opacity: 0; 
+        transform: translateX(-50px);
+    }
+    100%  { 
+        right: 0;
+        opacity: 1; 
+    }
+}
+.quarterPanel {
+    background-color: #dddddd;
+    margin: 0 auto;
+    padding: 1em;
+    flex-grow: 1;
+    border-radius: 10px;
+    animation: fadeinandover 1s;
+}
+
+@keyframes fadeinandover {
+    0% { 
+        bottom: 50px;
+        opacity: 0; 
+        transform: translateY(-50px);
+    }
+    100%  { 
+        bottom: 0px;
+        opacity: 1; 
+    }
+}
+
 .odds {
     background-color: #dddddd;
-    width: 98%;
+    width: 100%;
     margin: 0 auto;
     padding: 3em;
     -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
@@ -15,7 +55,7 @@
     position: relative;
     background-color: #192841;
     animation: createBox .75s;
-    width: 98%;
+    width: 100%;
     margin: 0 auto;
 
     display: flex;
@@ -25,10 +65,14 @@
 }
 
 .container {
-    padding-bottom: 6em;
+    padding-bottom: 10em;
     display: flex;
     gap: 1em;
-    flex-direction: column
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 98%;
+    left: 2%;
+    margin: auto
 }
 
 .pageContainer {
