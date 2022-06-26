@@ -13,19 +13,22 @@ function about() {
                 <div className={styles.container}>
 
                     <div className={styles.threeFourthPanel}>
-                        <div className={styles}></div>
-                        <ParagraphBlurb text ={experienceData.text} header = {experienceData.header}/>
+                        <ParagraphBlurb text ={experienceData.text} header = {experienceData.header} color = "#dddddd"/>
                     </div>
                     <div className={styles.quarterPanel}>
+                        <ParagraphBlurb text ={experienceData.text} header = {experienceData.header} color = "#192841" />
                     </div>
                     <div className={styles.odds}>
+                        <p className={styles.section}>Projects</p>
                         <Projects/>
                     </div>
                     <div className={styles.evens}>
+                        <p className={styles.whiteSection}>Skills and Experience</p>
                         <ExperienceBar/>
                     </div>
                     <div className={styles.odds}>
-
+                        <p className={styles.section}>Work Experience</p>
+                        <Projects/>
                     </div>
                 </div>
             <Footer/>

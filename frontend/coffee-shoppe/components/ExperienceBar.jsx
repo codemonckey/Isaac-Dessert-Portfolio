@@ -18,11 +18,14 @@ const experienceData =[{"image":"icons/Kotlin_Icon.svg.png","color":"red","width
                     return (<div className={styles.skillSet} key={idx}>
                         <div
                             onMouseEnter={() => setAnimated(() => true)}
-                            onAnimationEnd={() => setAnimated(() => false)}>
+                            onAnimationEnd={() => setAnimated(() => false)}
+                            className={bars.imageContainer}
+                           >
                             <img
-                            style={{height: "3em", width: "3em"}}
+                            style={{height: "2em", width: "2em"}}
                             className={animated ? bars.imageSkills : bars.imageSkillsNoAnimation}
                             src={d.image} />
+                            <p>description</p>
                          </div>
                         <div className={bars.bar} style={{background: d.color, "--width-var": d.width + '%'}}>
                                 <div className={bars.barText}>

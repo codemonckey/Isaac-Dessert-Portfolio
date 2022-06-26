@@ -9,7 +9,6 @@
 .text {
     position: relative;
     left: 8%;
-    color: white;
     width:84%;
     font-size: 1.2em;
     margin-block-start: 0;
@@ -24,7 +23,6 @@
 .header {
     position: relative;
     left: 8%;
-    color: white;
     font-size: 2em;
     font-weight: bold;
     margin-block-start: 0;

@@ -2,7 +2,7 @@
     background-color: #192841;
     margin: 0 auto;
     padding: 1em;
-    width: 50%;
+    width: 48%;
     border-radius: 10px;
     animation: fadeinandsides 1s;
 }
@@ -21,6 +21,7 @@
     background-color: #dddddd;
     margin: 0 auto;
     padding: 1em;
+    width: 48%;
     flex-grow: 1;
     border-radius: 10px;
     animation: fadeinandover 1s;
@@ -49,6 +50,9 @@
          -o-animation: fadein 3s; /* Opera < 12.1 */
             animation: fadein 3s;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
 
 .evens {
@@ -62,6 +66,9 @@
     flex-direction: row;
     padding: 3em;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
 
 .container {
@@ -124,3 +131,32 @@
     }
   } 
   
+.section {
+    position: relative;
+    color: #192841;
+    font-size: 2em;
+    font-weight: bold;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    width:84%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; 
+}
+
+.whiteSection {
+    position: relative;
+    color: #dddddd;
+    font-size: 2em;
+    font-weight: bold;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    width:84%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; 
+}
