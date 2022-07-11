@@ -8,7 +8,6 @@ const experienceData =[{"image":"icons/Kotlin_Icon.svg.png","color":"red","width
             {"image":"icons/Kotlin_Icon.svg.png","color":"teal","width":"54"}
     ];
 
-
     export const ExperienceBar = () => {
         return (
             <div className={bars.flexContainer}>

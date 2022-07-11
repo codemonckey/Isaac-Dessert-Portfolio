@@ -1,0 +1,62 @@
+.divi {
+  position:relative;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  left: 1%;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.blurb {
+  position:relative;
+  display: flex;
+  color: #dddddd;
+  align-self: flex-start;
+  animation: fadeinfromleft 1.2s;
+  animation-delay: 1s;
+  top: 2rem;
+  font-size: 2rem;
+  left: 2rem;
+  opacity: 0; 
+  animation-fill-mode: forwards;  
+}
+
+.blurb1 {
+  position:relative;
+  display: flex;
+  color: #dddddd;
+  animation: fadeinfromleft 1.2s;
+  animation-delay: 2.5s;
+  font-size: 2rem;
+  opacity: 0; 
+  animation-fill-mode: forwards;  
+}
+
+.blurb2 {
+  position:relative;
+  display: flex;
+  align-self: flex-end;
+  text-align: left;
+  color: #dddddd;
+  animation: fadeinfromleft 1.2s;
+  animation-delay: 4s;
+  font-size: 2rem;
+  opacity: 0; 
+  animation-fill-mode: forwards;  
+}
+
+@keyframes fadeinfromleft {
+  0% { 
+      right: 50px;
+      opacity: 0; 
+      transform: translateX(-50px);
+  }
+  100%  { 
+      right: 0;
+      opacity: 1; 
+  }
+}
